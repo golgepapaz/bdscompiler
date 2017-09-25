@@ -1,0 +1,7 @@
+[package]
+authors = ["hurcan.solter <hurcan.solter@simsoft.com.tr>"]
+name = "bdscompiler"
+version = "0.1.0"
+
+[dependencies]
+yaml-rust = "0.3.5"

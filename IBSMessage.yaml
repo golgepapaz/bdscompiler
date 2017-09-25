@@ -1,0 +1,29 @@
+meta:
+    id: ibs_ethernet_msg
+    endian: le
+seq:
+    - id: message_id
+      type: u1
+    - id: message_interface
+      type: u1
+    - id: port_number
+      type: u1
+    - id: message_byte_count
+      type: u2
+    - id: header_checksum
+      type: u1
+    - id: data_bytes
+      size: message_byte_count
+    - id: checksum
+      type: u1
+    - id: bfirst
+      type: b1
+    - id: brest
+      type: b9
+    - id: blast
+      type: b6
+    - id: has_crc32
+      type: u1
+    - id: crc32
+      type: u4
+      if: has_crc32 != 0
