@@ -1,3 +1,4 @@
+use yaml_rust::*;
 
 enum Endianness {
 
@@ -9,13 +10,13 @@ pub struct ClassSpec {
 }
 
 pub struct  MetaSpec {
-    id : str,
-    endian :Option<Endiannes>
+    id : String,
+    endian :Option<Endianness>
 
 }
 impl  MetaSpec {
-    fn from_yaml() -> MetaSpec {
-
+    fn from_yaml(t: Vec<Yaml>  ) -> MetaSpec {
+        MetaSpec {id:"dfdf".to_owned(),endian:None}
     }
 }
 pub struct AttrSpec {

@@ -1,13 +1,15 @@
 meta:
     id: ibs_ethernet_msg
     endian: le
+    imports: 
+    - importx
 seq:
     - id: message_id
       type: u1
     - id: message_interface
       type: u1
     - id: port_number
-      type: u1
+      type: importkkk
     - id: message_byte_count
       type: u2
     - id: header_checksum
