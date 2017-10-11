@@ -15,7 +15,8 @@ pub struct  MetaSpec {
 
 }
 impl  MetaSpec {
-    fn from_yaml(t: Vec<Yaml>  ) -> MetaSpec {
+    fn from_yaml(t: Vec<Yaml>) -> MetaSpec {
+
         MetaSpec {id:"dfdf".to_owned(),endian:None}
     }
 }
